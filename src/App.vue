@@ -1,32 +1,37 @@
 <template>
-  <div id="app">
+  <v-app>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/dashboard">Dashboard</router-link> |
+      <router-link to="/">Preview</router-link>
     </div>
-    <router-view/>
-  </div>
+    <main class="pa-6">
+      <router-view/>
+    </main>
+  </v-app>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+#app
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: #f6f8f9
+  line-height: 1.75
 
-#nav {
-  padding: 30px;
+#nav
+  padding: 30px
+  background: #fff
+  a
+    font-weight: bold
+    color: #2c3e50
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    &.router-link-exact-active
+      color: #42b983
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
+main
+  max-width: 1200px
+  margin: 0 auto
+  width: 100%
 </style>

@@ -1,5 +1,7 @@
 # blog_cms
 
+> Demo: https://rojusr.github.io/blog_cms/
+
 ## Project setup
 ```
 npm install

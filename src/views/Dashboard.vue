@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    
+
     <h2>Posts</h2>
     <!-- <Table :entries="entries" /> -->
     <v-text-field
@@ -144,6 +144,5 @@ export default {
     width: 100%
     &:hover
       background: $primaryColor !important
-    .toolbar
 
 </style>
